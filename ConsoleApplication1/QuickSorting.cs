@@ -15,11 +15,11 @@ namespace ConsoleApplication1
             int mid = array[(left + right) / 2];
             while (min <= max)
             {
-                while ((min < right) && (array[min] < mid))
+                while (array[min] < mid)
                 {
                     min++;
                 }
-                while ((max > left) && (array[max]) > mid)
+                while (array[max] > mid)
                 {
                     max--;
                 }
